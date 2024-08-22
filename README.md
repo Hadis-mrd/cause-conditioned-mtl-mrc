@@ -77,6 +77,10 @@ The `Answerable_Suggestion_Model` repository contains implementations and evalua
    - Run `combining` in the `MRC Eval` folder.
    - Execute majority voting eval scripts under the base directory.
 
+2. **Majority Voting and Metrics**
+   - After finishing with `combining`, go to `Evaluation` on the main folder of the model, and run it to get generation results.
+   - Then in the `MRC Eval` folder, run `Metrics` to get the classification performance.
+
 ## Training Data
 
 - **Original Dataset:** Initially used all data from the `unanswgen` dataset, but found to be imbalanced.
