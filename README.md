@@ -100,7 +100,3 @@ The `Answerable_Suggestion_Model` repository contains implementations and evalua
     - A: 1184
     - #: 493
   - **Total:** 5,945 examples
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
