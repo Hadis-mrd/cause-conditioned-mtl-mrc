@@ -101,15 +101,6 @@ The `Answerable_Suggestion_Model` repository contains implementations and evalua
     - #: 493
   - **Total:** 5,945 examples
 
-## Results and Findings
-
-- **Baseline Results:** Established initial performance benchmarks.
-- **Single Classifier Model:** Evaluated with 6 epochs.
-- **Two Classifier Model:** Compared performance with and without the additional classifier.
-
-**Interpretation:** 
-- Observed overfitting with no information, leading to better question generation when the dataset was diverse. This improved the generator's focus on generating answerable questions and salient sentences.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
