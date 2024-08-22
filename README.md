@@ -97,8 +97,8 @@ The `Answerable_Suggestion_Model` repository contains implementations and evalua
   - **Total:** 20,476 examples
 
 - **Development Set:** 
-  - `dev_sal.csv`
-  - Includes unanswerable questions from the `squad_dev2.0` dataset with salient sentences:
+- `dev_sal.csv`
+- Includes unanswerable questions from the `squad_dev2.0` dataset with salient sentences:
   - **Types and Counts:**
     - I: 655
     - E: 2394
