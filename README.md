@@ -2,14 +2,14 @@
 
 ## Overview
 
-The `Answerable_Suggestion_Model` repository contains implementations and evaluations of various BART-based multitask learning (MTL) models for AthenaGuard. This project aims to improve the generation of answerable questions and the classification of text. The models are tested with different hyperparameters and datasets to enhance performance.
+The `Answerable_Suggestion_Model` repository contains implementations and evaluations of various BART-based multitask learning (MTL) models for Answerable Suggestions based on unanswerable questions based on plausible answers. This project aims to improve the generation of answerable questions and the classification of text. The models are tested with different hyperparameters and datasets to enhance performance.
 
 ## Tasks and Models
 
 ### Tasks Overview
 
-- **Task 20 & Task 21 Baselines:** These serve as reference points for evaluating model performance. The score to beat is 2103.
-- **Task 22:** Builds upon previous models with various configurations to enhance results. Focuses on dropout rates, loss weights, and dataset balancing.
+- **Task 21 Baseline:** These serve as reference points for evaluating model performance. The score to beat is 2109.
+- **Task 22:** 2 MTL models were made for this task, one with a single classifier, having a score of 2321, and one with 2 classifiers, with a score of 2581.
 
 ### Model Configurations
 
@@ -19,7 +19,7 @@ The `Answerable_Suggestion_Model` repository contains implementations and evalua
    - **Optimizer:** Adam
    - **Dropout and Loss Weights:** Default settings.
 
-2. **Updated Models**
+2. **MTL Models**
    - **Initial Attempts:** Models with issues due to excessive epochs or data inconsistencies.
    - **Balanced Dataset Model:** Includes a balanced dataset and improved hyperparameters.
      - **Dropout:** Lower dropout for better classification.
@@ -34,8 +34,7 @@ The `Answerable_Suggestion_Model` repository contains implementations and evalua
    - Clear the contents in the directories as needed.
 
 2. **File Management**
-   - In the `MRC Eval` directory, delete specified files.
-   - In the `sg-net` directory, delete necessary files.
+   - Before each run, delete all files that aren't present in the current directories, but for retroreader and SGNet, install and put their model files in their respective directories: retroreader (cls_model, model4), and SG-Net. 
 
 ### Training
 
@@ -66,6 +65,7 @@ The `Answerable_Suggestion_Model` repository contains implementations and evalua
      tokenizer = BartTokenizer.from_pretrained(output_dir)
      ```
    - Paste this code right before `model.train`.
+   - Note for the single classifier, remove one of the 2 classifiers, and just replace the name with classifier instead of classifier_x 
 
 ### Evaluation
 
