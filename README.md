@@ -81,8 +81,9 @@ The `Answerable_Suggestion_Model` repository contains implementations and evalua
    - After finishing with `combining`, go to `Evaluation` on the main folder of the model, and run it to get generation results.
    - Then in the `MRC Eval` folder, run `Metrics` to get the classification performance.
 
-## Training Data
-
+## Datasets
+- **Training Set:**
+- `all_unans_salience.csv`
 - **Original Dataset:** Initially used all data from the `unanswgen` dataset, but found to be imbalanced.
 - **Balanced Dataset:** Includes answerable cases and a balanced distribution:
   - **Types and Counts:**
@@ -95,7 +96,9 @@ The `Answerable_Suggestion_Model` repository contains implementations and evalua
     - Ans: 3000
   - **Total:** 20,476 examples
 
-- **Development Set:** Includes unanswerable questions from the `squad_dev2.0` dataset with salient sentences:
+- **Development Set:** 
+  - `dev_sal.csv`
+  - Includes unanswerable questions from the `squad_dev2.0` dataset with salient sentences:
   - **Types and Counts:**
     - I: 655
     - E: 2394
