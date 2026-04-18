@@ -1,8 +1,8 @@
-# Answerable_Suggestion_Model
+# Cause-Conditioned Multi-Task Learning for Answerable Question Suggestion in MRC 
 
 ## Overview
 
-The `Answerable_Suggestion_Model` repository contains implementations and evaluations of various BART-based multitask learning (MTL) models for Answerable Suggestions based on unanswerable questions based on plausible answers. This project aims to improve the generation of answerable questions and the classification of text. The models are tested with different hyperparameters and datasets to enhance performance.
+This repository contains implementations and evaluations of various BART-based multitask learning (MTL) models for Answerable Suggestions based on unanswerable questions with plausible answers. This project aims to improve the generation of answerable questions and the classification of text. The models are tested with different hyperparameters and datasets to enhance performance.
 
 ## Tasks and Models
 
